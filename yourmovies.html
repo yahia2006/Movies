@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourMovies</title>
+    <link rel="stylesheet" href="yourmovies.css">
+    <link rel="website icon" href="imgs/mov.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="hd">
+        <a id="log" href="#" class="logo">YourMovies<img src="imgs/mov.png"></a>
+        <div class="toggle">
+            <i id="navmobileopen" class="fa-solid fa-bars"></i>
+            <i id="navmobileclose">X</i>
+            
+        </div>
+        <nav id="nv">
+            <a class="nava" href="#">Home</a>
+            <a class="nava" href="#">Browse</a>
+            <a class="nava" href="#">Movies</a>
+     
+        </nav>
+        <div class="setting">
+            <div class="barsearch" id="bs">
+                <input id="inp" type="text">
+                <button><i id="gl" class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="settingicons">
+                <i id="ic" class="fa-solid fa-bookmark"></i>
+                <i id="ic1" class="fa-solid fa-heart"></i>
+                <i  id="opensetting" class="fa-solid fa-gear"></i>
+            </div>
+            <div class="setting-card" id="setcard">
+                <i id="closessetting">X</i>
+                <p>Text Colors</p>
+                <div class="changecolor">
+                    <div class="bodycolor"></div>
+                    <div class="bodycolor1"></div>
+                    <div class="bodycolor2"></div>
+                    <div class="bodycolor3"></div>
+                    <div class="bodycolor4"></div>
+                </div>
+                <p>Transition</p>
+                <button class="transition" id="traon">On</button>
+                <button class="transition" id="traoff">Off</button>
+
+            </div>
+        </div>
+
+ 
+    </header>
+
+    <section class="home" id="hm">
+        <div class="cont-home">
+            <div class="cards-home">
+                <div class="img">
+                    <img class="im" src="imgs/last.jpg">
+                    <img class="im" src="imgs/iron33.jfif">
+                    <img class="im" src="imgs/jww.jfif">
+                     
+                </div>
+                <video src="videos/JW4.mp4"></video>
+                <div class="texttit">
+                    <h1>Welcome To <span id="ym">YourMovies</span> Site</h1>
+                    <p>Drama ,Comedy ,Action ,Scary ,Romance <span>Movies</span></p>
+                    <div class="btn">
+                        <a id="wnow" class="watch" href="#">Watch Now</a>
+                        <a class="trailer" href="#">The Trailer </a>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="dd">
+                <div class="carddd" id="first">
+                    
+                </div>
+                <div class="carddd">
+
+                </div>
+                <div class="carddd">
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="Browse" id="gg">
+        <h1 id="wh">What We Have ?</h1>
+        <div class="cards-Browse">
+            <div class="card-Browse">
+                <div class="imgcardbr">
+                    <img src="imgs/comedy.jfif">
+                </div>
+                <div class="text-card-browse" id="tcbg">
+                    <p>Comedy</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, necessitatibus?</p>
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="card-Browse">
+                <div class="imgcardbr">
+                    <img src="imgs/Drama.jfif">
+                </div>
+                <div class="text-card-browse">
+                    <p>Drama</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, necessitatibus?</p>
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="card-Browse">
+                <div class="imgcardbr">
+                    <img src="imgs/Action.jfif">
+                </div>
+                <div class="text-card-browse">
+                    <p>Fantasy</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, necessitatibus?</p>
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="card-Browse">
+                <div class="imgcardbr">
+                    <img src="imgs/action1.jfif">
+                </div>
+                <div class="text-card-browse">
+                    <p>Action</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, necessitatibus?</p>
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="card-Browse">
+                <div class="imgcardbr">
+                    <img src="imgs/scary.jfif">
+                </div>
+                <div class="text-card-browse">
+                    <p>Scary</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, necessitatibus?</p>
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="card-Browse">
+                <div class="imgcardbr">
+                    <img src="imgs/romance.jfif">
+                </div>
+                <div class="text-card-browse">
+                    <p>Romance</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, necessitatibus?</p>
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="movies">
+        <h1>Our Movies</h1>
+        <div class="movies-container">
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/godfather.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    
+                    <p class="tit">The God Father 1</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/ironman2.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    
+                    <p class="tit">Iron Man 2</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/johnwick4.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">John Wick 3</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/bw.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">Black Widow</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/venom1.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">Venom</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/whoami.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">Whoami</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/thor1.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">Thor</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/extraction2.jpg">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">Extraction 2</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-movies">
+                <div class="img-card-movies">
+                    <img src="imgs/theboys.jfif">
+                    <button class="watchmovie">Watch <i class="fa-solid fa-play"></i></button>
+                </div>
+     
+                <div class="title-card-movies">
+                    <p class="tit">The Boys</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="btns-card-movies">
+                        <button class="like">Like : <i class="fa-solid fa-heart"> </i><span>125K</span></button>
+                        <button class="watchlater">Add To Watch Later <i class="fa-solid fa-bookmark"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="Vm">View More <i class="fa-solid fa-arrow-down"></i></button>
+
+    </section>
+    <section class="subscribe">
+        <p>Subscribe To Get All Coming News</p>
+        <div class="btns-subscribe">
+            <input type="text" placeholder="Your Email">
+            <button id="sub">Submit</button>
+        </div>
+        <div class="download">
+            <h3>Download this app on</h3>
+            <div class="imgs-downlaod">
+                <img src="imgs/google_play.png">
+                <img id="store" src="imgs/asss.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="yourmovies.js"></script>
+
+    
+</body>
+</html>

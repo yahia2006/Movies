@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: fixed;
+    z-index: 1000;
+    opacity: 2;
+    
+}
+header nav{
+    display: flex;
+    align-items: center;
+    
+}
+header nav a{
+    color: tomato;
+    margin-right: 25px;
+    font-size: 1rem;
+    opacity: 2;
+}
+
+.setting{
+    display: flex;
+}
+.barsearch{
+    transform: translateX(-100px);
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    transform: translateY(7px);
+   
+}
+.barsearch input{
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+.barsearch button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    transform: translateX(-50px);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: tomato;
+}
+.setting{
+    display: flex;
+    align-items: center;
+}
+.settingicons i{
+    color: white;
+    margin-left: 12px;
+    margin-right: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+
+
+}
+.logo{
+    color: white;
+    font-size: 1.3rem;
+
+}
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+}
+.img{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    transition: 0.5s all linear;
+    
+   
+    
+    
+  
+     
+}
+.dd{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+#first{
+    background-color: tomato;
+}
+.carddd{
+    width: 20px;
+    height: 20px;
+    border: 2px solid tomato;
+    margin: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img img{
+    width: 100%;
+    min-height: 100vh;
+    transform: translateX(0%);
+    transition: 0.3s all linear;
+    opacity: 1;
+
+   
+
+}
+.cont-home{
+    width: 100%;
+}
+.cards-home{
+    width: 100%;
+    height: 75vh;
+}
+.cards-home img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn a{
+    margin-right: 15px;
+    padding: 0.5rem 1.5rem;
+}
+.btn .watch{
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+}
+video{
+    width: 100%;
+    height: 85vh;
+    background-color: black;
+    display: none;
+}
+.btn .trailer{
+    color: black;
+    background-color:white;
+    border-radius: 5px;
+}
+.leftbtn{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+ 
+}
+.rightbtn{
+    position: absolute;
+    left: 92%;
+    top: 30%;
+}
+.rightbtn button{
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.leftbtn button{
+    border: none;
+    color: white;
+    background:none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.navmobile{
+    color: white;
+    cursor: pointer;
+    scale: 0;
+    
+}
+#opennav{
+    scale: 0;
+}
+.navmobile i{
+    font-size: 1.5rem;
+}
+
+.texttit{
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    left: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 12px 12px 0px;
+    
+}
+.texttit h1{
+    margin: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+.texttit h1 span{
+    color: tomato;
+}
+
+.texttit p{
+    margin: 15px;
+    margin-bottom: 35px;
+    color: whitesmoke;
+}
+.btn{
+    margin-left: 15px;
+    margin-bottom: 45px;
+}
+
+
+.setting-card{
+    width: 34%;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top:90%;
+    left: 65%;
+    margin: 5px;
+    transition: 0.5s all linear;
+    border-radius: 5px;
+    text-align: center;
+    transform: translateY(-200%);
+
+
+
+}
+.setting-card #closessetting{
+    color: #444;
+    position: absolute;
+    top: 5px;
+    left: 90%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.setting-card p{
+    margin: 15px;
+}
+.changecolor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.setting-card p{
+    color: #555;
+}
+.bodycolor{
+    width: 25px;
+    height: 25px;
+    background-color:aqua;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bodycolor1{
+    width: 25px;
+    height: 25px;
+    background-color:crimson;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bodycolor2{
+    width: 25px;
+    height: 25px;
+    background-color:goldenrod;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bodycolor3{
+    width: 25px;
+    height: 25px;
+    background-color:tomato;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bodycolor4{
+    width: 25px;
+    height: 25px;
+    background-color:cornflowerblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#traon{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#traoff{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: #444;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.toggle i{
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#navmobileclose{
+    display: none;
+}
+
+@media(max-width:999px){
+    .toggle{
+        display: flex;
+        align-items: center;
+        display: block;
+    }
+    .toggle i{
+        font-size: 1.3rem;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    nav{
+        position: absolute;
+        width: 50%;
+        height: 70vh;
+        background-color: #444;
+        left: -100%;
+        top: 0%;
+        transition: 0.5s all linear;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: scroll;
+        gap: 1.5rem;
+    }
+    nav a{
+        padding: 15px;
+        margin-bottom:65px;
+        display: flex;
+        align-items: center;
+
+    }
+    .barsearch{
+        position: absolute;
+        left:70%;
+        top: 120%;
+
+    }
+    .setting-card{
+        width: 60%;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        top:0%;
+        left: 30%;
+        transition: 0.5s all linear;
+        text-align: center;
+        transform: translateY(-200%);
+    
+
+    }
+ 
+}
+
+.Browse{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0px;
+}
+.Browse h1{
+    color: tomato;
+    margin: 15px;
+}
+.cards-Browse{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.card-Browse{
+    width:25%;
+    height: 200px;
+    background-color: tomato;
+    margin: 15px;
+    border-radius: 10px;
+    
+}
+.imgcardbr{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+    scale: 1;
+    height: 100%;
+    transition: 0.3s all linear;
+}
+
+.imgcardbr img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.text-card-browse{
+    width: 100%;
+    height: 100%;
+    padding-left: 13px;
+    padding-top: 2px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s all linear;
+    scale: 0;
+    transform: translateY(-100%);
+}
+
+.text-card-browse p{
+    margin-bottom:5px;
+}
+.text-card-browse a{
+    padding: 0.5rem 1.5rem;
+    background-color: #555;
+    color: white;
+    border: none;
+    display: inline-block;
+    outline: none;
+    transform: translateY(15px);
+    border-radius: 10px;
+}
+@media(max-width:1000px){
+    .barsearch{
+        display: none;
+    }
+
+}
+
+@media(max-height:500px){
+    .img{
+        height: 130vh;
+    }
+    .Browse{
+        width: 100%;
+        min-height: 100vh;
+        padding: 150px 0px;
+    }
+   
+}
+#wh{
+    font-size: 1.3rem;
+    color: #555;
+    margin: 15px;
+}
+.movies{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0px;
+}
+.movies h1{
+    font-size: 1.3rem;
+    color: #555;
+    margin: 15px;
+
+}
+.movies-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.card-movies{
+    width: 300px;
+    height: 375px;
+    border-radius: 5px;
+    transition: 0.4s all linear;
+    margin: 15px;
+    box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.5);
+}
+.card-movies:hover{
+    transition: 0.4s all linear;
+    transform: translateY(-5px);
+}
+.img-card-movies{
+    width: 100%;
+    margin-bottom: 2px;
+    height: 70%;
+}
+.img-card-movies img{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+}
+.title-card-movies{
+    width: 100%;
+    margin-bottom:5px;
+    text-align: center;
+}
+.watchmovie{
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    transform: translateY(-150px) translateX(80%);
+    cursor: pointer;
+    border: 2px solid white;
+    font-size: 1.1rem;
+}
+.title-card-movies .tit{
+    color: goldenrod;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+.stars{
+    margin-bottom: 10px;
+}
+.btns-card-movies{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.btns-card-movies button{
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    margin-left: 2px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.btns-card-movies .like{
+    margin-bottom: 5px;
+    padding: 0.5rem 1.5rem;
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+}
+.btns-card-movies .watchlater{
+    margin-bottom: 5px;
+    padding: 0.5rem 1.5rem;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+#Vm{
+    border: none;
+    outline: none;
+    transform:translateX(-50%);
+    position: absolute;
+    left: 50%;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    color:black;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.subscribe{
+    width: 100%;
+    min-height: 50vh;
+    padding: 100px 20px;
+    text-align: center;
+
+}
+.subscribe p{
+    color: #555;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+.btns-subscribe{
+    width: 100%;
+    margin: auto;
+}
+.btns-subscribe input{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 45px;
+    border-left: 3px solid #444;
+    border-top: 3px solid #444;
+    border-bottom: 3px solid #444;
+    border-right: 0px solid white;
+    border-radius: 0px;
+    margin: 15px;
+    border-radius: 0px 25px 25px 0px;
+}
+.btns-subscribe button{
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 40px;
+    position: absolute;
+    transform: translateY(18px) translateX(-108%);
+    border-radius: 25px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+.download h3{
+    color: #444;
+    margin: 25px;
+}
+.imgs-downlaod{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+}
+.imgs-downlaod img{
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+}
+#store{
+    scale: 1.3;
+}
+
+@media(max-width:830px){
+    .subscribe{
+        width: 100%;
+        min-height: 50vh;
+        padding: 100px 0px;
+        text-align: center;
+    
+    }
+    .btns-subscribe input{
+        border: none;
+        outline: none;
+        width: 70%;
+        height: 45px;
+        border-left: 3px solid #444;
+        border-top: 3px solid #444;
+        border-bottom: 3px solid #444;
+        border-right: 0px solid white;
+        border-radius: 0px;
+        margin: 15px;
+        border-radius: 0px 25px 25px 0px;
+    }
+    .btns-subscribe button{
+        border: none;
+        outline: none;
+        width: 30%;
+        height: 40px;
+        position: absolute;
+        transform: translateY(18px) translateX(-108%);
+        border-radius: 25px;
+        background-color: tomato;
+        color: white;
+        cursor: pointer;
+    }
+    .cards-Browse{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 1rem;
+        padding-left: 15px;
+    }
+    .card-Browse{
+        width:35%;
+        height: 200px;
+        background-color: tomato;
+        margin: 15px;
+        border-radius: 10px;
+    }  
+
+}
